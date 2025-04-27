@@ -109,7 +109,7 @@ int main(){
 ```
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/d0c59350-0fb9-4e87-bd4d-be36c741b9fc)
+![image](https://github.com/user-attachments/assets/a4805e4c-464f-4ea4-85b8-7db9ac944c1d)
 
 
 ## RESULT
