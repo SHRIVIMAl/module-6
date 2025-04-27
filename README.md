@@ -1,3 +1,8 @@
+NAME:T.K.SHRIVIMAL
+
+
+REF NO:212224220101
+
 # EX-26-AREA-OF-RECTANGLE-USING- POINTER
 ## AIM
 To write a C Program to find area of rectangle using pointer.
