@@ -70,7 +70,7 @@ int main() {
 ```
 ## OUTPUT
 
-![image](https://github.com/user-attachments/assets/66362eda-177a-4718-96cb-77cdc9faf3dc)
+![image](https://github.com/user-attachments/assets/d0c59350-0fb9-4e87-bd4d-be36c741b9fc)
 
 
 ## RESULT
