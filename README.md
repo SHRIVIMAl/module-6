@@ -49,16 +49,34 @@ To write a C Program to print 'WELCOME' using malloc() and free().
 
 ## PROGRAM
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+    char *str;
+    str = (char*) malloc(5 * sizeof(char));
+    if (str == NULL) {
+        printf("Memory allocation failed\n");
+        return 1;
+    }
+    strcpy(str, "Welcome");
+    printf("%s", str);
+
+    free(str);
+    return 0;
+}
 
 ```
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/66362eda-177a-4718-96cb-77cdc9faf3dc)
 
 
 ## RESULT
-Thus the program to print 'WELCOME' using malloc() and free() has been executed successfully
+Thus the program to print 'WELCOME' using malloc() and free() has been executed successfully.
  
-.
+
 
 
 
@@ -186,11 +204,46 @@ Step 7: Output Loop (i = 0 to 1):
 Step 8: End the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+struct student {
+    char name[10];
+    int rollno;
+    int subject[5];
+    int total;
+};
+
+int main() {
+    struct student s[2];
+    int i, j;
+
+    for (i = 0; i < 2; i++) {
+        scanf("%s", s[i].name);
+        scanf("%d", &s[i].rollno);
+        for (j = 0; j < 5; j++) {
+            scanf("%d", &s[i].subject[j]);
+        }
+    }
+    for (i = 0; i < 2; i++) {
+        s[i].total = 0;
+        for (j = 0; j < 5; j++) {
+            s[i].total += s[i].subject[j];
+        }
+    }
+    for (i = 0; i < 2; i++) {
+        printf("\nStudent Name: %s\n", s[i].name);
+        printf("Roll Number: %d\n", s[i].rollno);
+        printf("Total Marks: %d\n", s[i].total);
+        printf("Average Marks: %.2f\n", s[i].total / 5.0);
+    }
+    return 0;
+}
+```
 
 
 ## OUTPUT
 
- 
+ ![image](https://github.com/user-attachments/assets/0894b928-9376-4c40-96ca-f008b1415bf1)
 
 ## RESULT
 
