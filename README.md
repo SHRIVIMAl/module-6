@@ -96,24 +96,23 @@ To write a C Program to store the student information and display it using struc
 ## PROGRAM
 ```
 #include <stdio.h>
-	struct Student {
-	    char name[50];
-	    int rollNumber;
-	    float marks;
-	};
-	int main() {
-	    struct Student student;
-	    
-	    scanf("%s", student.name);
-	    scanf("%d", &student.rollNumber);
-	    scanf("%f", &student.marks); 
-	    printf("Displaying Information:\n");
-	    printf("Name: %s\n", student.name);
-	    printf("Roll number: %d\n", student.rollNumber);
-	    printf("Marks: %.1f\n", student.marks); 
-	    return 0;
-	}
+struct Student {
+	char name[50];
+	int rollNumber;
+	float marks;
+};
+int main() {
+	struct Student student;
+	scanf("%s", student.name);
+	scanf("%d", &student.rollNumber);
+	scanf("%f", &student.marks); 
+	printf("Displaying Information:\n");
+	printf("Name: %s\n", student.name);
+	printf("Roll number: %d\n", student.rollNumber);
+	printf("Marks: %.1f\n", student.marks); 
+	return 0;
 }
+
 ```
 
 ## OUTPUT
