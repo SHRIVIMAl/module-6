@@ -11,8 +11,22 @@ To write a C Program to find area of rectangle using pointer.
 
 ## PROGRAM
 
+```
+#include <stdio.h>
+int main()
+{
+    float length, width, area;
+    float *plength=&length, *pwidth=&width, *parea=&area;
+    scanf("%f", &length);
+    scanf("%f", &width);
+    *parea = *plength * (*pwidth);
+    printf("Area of rectangle = %f sq. units ", *parea);
+    return 0;
+}
+```
 ## OUTPUT
-		       	
+![image](https://github.com/user-attachments/assets/41cc08c7-0b39-4ae0-a81a-c5e673abd322)
+       	
 
 
 ## RESULT
@@ -34,7 +48,9 @@ To write a C Program to print 'WELCOME' using malloc() and free().
 6.	Stop the program.
 
 ## PROGRAM
+```
 
+```
 ## OUTPUT
 
 
@@ -60,9 +76,22 @@ To write a C Program to store the student information and display it using struc
 4.	Stop the program.
 
 ## PROGRAM
-
+```
+#include<stdio.h>
+struct student{
+    int rollno;
+    char name[100];
+    float percentage;
+};
+int main(){
+    struct student s;
+    scanf("%d %s %f",&s.rollno,s.name,&s.percentage);
+    printf("Rollno is: %d \nName is: %s\nPercentage is: %.2f",s.rollno,s.name,s.percentage);
+}
+```
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/ade9a480-610c-44c6-8cd5-03f0761adef3)
 
 
 ## RESULT
@@ -87,9 +116,32 @@ To write a C Program to read and store the data of 3 employees and calculate the
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include<stdio.h>
+struct employee{
+    int empno;
+    char dept[50];
+    int basic_pay;
+}e[3];
 
+int main(){
+    for(int i=0;i<3;i++){
+        scanf("%d %s %d",&e[i].empno,e[i].dept,&e[i].basic_pay);
+    }
+    printf("Details of the Employee:\n");
+    int da,hra;
+    float gs;
+    for(int i=0;i<3;i++){
+        da = e[i].basic_pay * 0.1;
+        hra = e[i].basic_pay * 0.3;
+        gs = e[i].basic_pay + da + hra;
+        printf("%d %s %d %d %d %.2f\n",e[i].empno,e[i].dept,e[i].basic_pay,da,hra,gs);
+    }
+}
+```
 
  ## OUTPUT
+![image](https://github.com/user-attachments/assets/7e11a1c2-96fc-43f8-a47c-5dc47634a152)
 
  
 
